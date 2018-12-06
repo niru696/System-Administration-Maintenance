@@ -1,0 +1,171 @@
+
+{% extends "base.html" %}
+{% block content %}
+<head>
+ <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+<style>
+    
+.button {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+.button1 {
+    background-color: #008CBA;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+.button2 {
+    background-color: rgb(175, 91, 76);
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+.button3 {
+    background-color: rgb(175, 76, 97);
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+.button4 {
+    background-color: rgb(16, 231, 70);
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+.button5 {
+    background-color: rgb(168, 175, 76);
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+.button6 {
+    background-color: rgb(94, 76, 175);
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+.button7 {
+    background-color: rgb(189, 228, 189);
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+.button8 {
+    background-color: rgb(199, 28, 156);
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+.button9 {
+    background-color: rgb(196, 207, 31);
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+
+
+
+
+</style>
+</head>
+<body style="background-color: ">
+{% if messages %}
+<ul class="messages">
+    {% for message in messages %}
+    <li{% if message.tags %} class="{{ message.tags }}"{% endif %}>{{ message }}</li>
+    {% endfor %}
+</ul>
+{% endif %}
+<nav class="navbar navbar-expand-md navbar-light bg-light sticky-top">
+    <div class="row welcome text-center"
+    <h1>System Administration And Maintenance Lab Assignment5</h1></div>
+  
+</nav> 
+<hr>
+<div class="container-fluid padding"> 
+<div class="row text-center padding">
+        <div class="col-xs-12 col-sm-6 col-md-3">
+            <a class ="button8" href="/GUISAM/memory-usage/">memory-usage</a>
+                
+        </div>
+        <div class="col-xs-12 col-sm-6 col-md-3">
+            <a class ="button8" href="/GUISAM/CPU-usage/">CPU-usage</a>
+                
+        </div>
+        
+        <div class="col-xs-12 col-sm-6 col-md-3">
+            <a class="button8" href="/GUISAM/renice/">Renice</a>
+        </div>
+</div>
+</div>
+        
+
+</body>
+{% endblock %}
